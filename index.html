@@ -63,7 +63,7 @@
         </center>
         <ul>
             <a href="https://api.whatsapp.com/send?phone=+6288214764360&text="><h2>Owner Contacts</a>
-            <a href="https://jadwal-la-nigga-samp.vercel.app/">Jadwal Pertandingan</a>
+            <a href="../jadwal-la-nigga">Jadwal Pertandingan</a>
             <a href="https://chat.whatsapp.com/J8r1xzSm9CBBA2D8sdWGmr">Comunity</a>
             <a href="https://chat.whatsapp.com/JNwEeKZqPw29wpiZ4tsGgo">Market Player</a>
             <a href="https://youtube.com/@akmalshellby?si=W9vbfW35vUVAXy8_">Live Match</a>
@@ -198,7 +198,7 @@ h1 {
 <body>
   
  <center>
-<a href="https://jadwal-la-nigga-samp.vercel.app/" class="klikable-text">Match Info</a> <a href="https://chat.whatsapp.com/J8r1xzSm9CBBA2D8sdWGmr" class="klikable-text">Comunity</a> <a href="https://youtube.com/@akmalshellby?si=W9vbfW35vUVAXy8_" class="klikable-text">live match</a> </br>
+<a href="../jadwal-la-nigga" class="klikable-text">Match Info</a> <a href="https://chat.whatsapp.com/J8r1xzSm9CBBA2D8sdWGmr" class="klikable-text">Comunity</a> <a href="https://youtube.com/@akmalshellby?si=W9vbfW35vUVAXy8_" class="klikable-text">live match</a> </br>
 <a href="https://chat.whatsapp.com/I7Q36WOYgpyI2hIDwF1Hk5"  class="klikable-text">Rules</a> <a href="https://chat.whatsapp.com/JNwEeKZqPw29wpiZ4tsGgo" class="klikable-text">market </a> 
 <a href="https://chat.whatsapp.com/GbF2yLtfDTS7dxz9A78ula" class="klikable-text">Join La Nigga</a> 
 
@@ -337,13 +337,13 @@ li {
 <script>
     const teams = [
         { name: "AIM-AMPING SQUAD", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGw9_0WogI-v0nzAIsv_C5US5IPVJHHzoYu_HkvUHZe4gWaxzIShTpko&s=10", points: 0, score: 0, matches: 0 },
-        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 7, score: 7, matches: 3 },
+        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 5, score: 6, matches: 2 },
         { name: "Ambative", logo: "https://thumbs2.imgbox.com/e0/dc/xUD2oDwB_t.jpg", points: 3, score: 3, matches: 1 },
         { name: "ETERNAL DARKNES GENG", logo: "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "EVOS SA-MP", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhpMse50lFnBF5F76RljdCz7hqUJSiIlRmiK-mcuNBsxAMjVdDAh3qB8&s=10", points: 2, score: 1, matches: 1 },
         { name: "ExonCrowd", logo: "https://thumbs2.imgbox.com/ab/ff/QKYd9Hce_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Brooklyn", logo: "https://thumbs2.imgbox.com/6c/bd/WZwsPI0D_t.jpg", points: 0, score: 0, matches: 0 },
-        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 3, score: 2, matches: 1 },
+        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Free Dougs Neightborh", logo: "https://thumbs2.imgbox.com/6f/8f/gH6T3DzU_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "PAGUYUBAN TIAN MESSI", logo: "https://thumbs2.imgbox.com/16/2d/lktw6Vja_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Vguezcyz - cranio", logo: "https://thumbs2.imgbox.com/05/89/jGVodkoE_t.jpg", points: 0, score: 0, matches: 0 },
@@ -404,3 +404,256 @@ li {
     
 </body>
 </html>
+
+
+
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   
+    <title>Jadwal La niga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .filter {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .schedule {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF80;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .match {
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .match:last-child {
+            border-bottom: none;
+        }
+        .match h3 {
+            margin: 0;
+            color: #333;
+        }
+        .match p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .team-logos {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .team-logo {
+            width: 50px; /* Ukuran logo */
+            height: 50px;
+            border-radius: 50%; /* Membuat gambar bulat */
+            margin: 0 5px; /* Jarak antar logo */
+        }
+    </style>
+</head>
+<body>
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Jadwal La niga</h1>
+        <p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBbIRRKSC_YRuaXrRW2mBq_E-yIzoL2baQpw&usqp=CAU" alt="Logo Profil" class="logo-profil">
+    </div>
+</body>
+</html>
+
+<style>
+				body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Vertikal align */
+}
+
+h1 {
+    margin: 0; /* Menghilangkan margin default */
+    padding-right: 10px; /* Memberikan jarak antara h1 dan logo */
+}
+
+.logo-profil {
+    width: 40px; /* Atur lebar logo */
+    height: 40px; /* Atur tinggi logo */
+    border-radius: 50%; /* Membuat logo menjadi bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+</style>
+
+<div class="filter">
+    <label for="teamSelect">Pilih Tim:</label>
+    <select id="teamSelect" onchange="filterSchedule()">
+        <option value="all">Semua Tim</option>
+        <option value="EVOS SA-MP">EVOS SA-MP</option>
+        <option value="AIM-AMPING SQUAD">AIM-AMPING SQUAD</option>
+        <option value="AMBARAWA TREX">AMBARAWA TREX</option>
+        <option value="Ambative">Ambative</option>
+        <option value="ETERNAL DARKNES GENG">ETERNAL DARKNES GENG</option>
+        <option value="Brooklyn">Brooklyn</option>
+        <option value="MATADOR 1945th">MATADOR 1945th</option>
+        <option value="𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍">𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍</option>
+        <option value="PAGUYUBAN TIAN MESSI">PAGUYUBAN TIAN MESSI</option>
+        <option value="Vguezcyz">Vguezcyz</option>
+        <option value="SIRKEL MOHAMMED">SIRKEL MOHAMMED</option>
+        <option value="SUKI LIAR ONTOPP">SUKI LIAR ONTOPP</option>
+        <option value="TeamOgahMundur">TeamOgahMundur</option>
+        <option value="Tempe Orek">Tempe Orek</option>
+        <option value="The San Diego California">The San Diego California</option>
+        <option value="Tiger Latin Kings">Tiger Latin Kings</option>
+        <option value="VENESTAR">VENESTAR</option>
+        <option value="VILLAN">VILLAN</option>
+        <option value="Allstar White">Allstar White</option>
+        <option value="EXONCROWD">EXONCROWD</option>
+         <option value="RRQ SA-MP">RRQ SA-MP</option>
+    </select>
+</div>
+
+<div class="schedule" id="scheduleContainer">
+    <!-- Jadwal pertandingan akan ditampilkan di sini -->
+</div>
+
+<script>
+    const matches = [
+        { date: "Minggu 8 Desember 2024", time: "20:00 WIB", team1: "MATADOR 1945th", team2: "AMBARAWA TREX" },
+        { date: "Senin 9 Desember 2024", time: "20:00 WIB", team1: "Ambative", team2: "ETERNAL DARKNES GENG" },
+        { date: "Selasa 10 Desember 2024", time: "20:00 WIB", team1: "EVOS SA-MP", team2: "RRQ SA-MP" },
+        { date: "Rabu 11 Desember 2024", time: "20:00 WIB", team1: "Brooklyn", team2: "MATADOR 1945th" },
+        { date: "Kamis 12 Desember 2024", time: "20:00 WIB", team1: "𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍", team2: "PAGUYUBAN TIAN MESSI" },
+        { date: "Jumat 13 Desember 2024", time: "20:00 WIB", team1: "Vguezcyz", team2: "SIRKEL MOHAMMED" },
+        { date: "Sabtu 14 Desember 2024", time: "20:00 WIB", team1: "SUKI LIAR ONTOPP", team2: "TeamOgahMundur" },
+        { date: "Minggu 15 Desember 2024", time: "20:00 WIB", team1: "Tempe Orek", team2: "The San Diego California" },
+        { date: "Senin 16 Desember 2024", time: "20:00 WIB", team1: "Tiger Latin Kings", team2: "VENESTAR" },
+        { date: "Selasa 17 Desember 2024", time: "20:00 WIB", team1: "VILLAN", team2: "Allstar White" },
+        { date: "Rabu 18 Desember 2024", time: "20:00 WIB", team1: "AMBARAWA TREX", team2: "Ambative" },
+        { date: "Kamis 19 Desember 2024", time: "20:00 WIB", team1: "ETERNAL DARKNES GENG", team2: "EVOS SA-MP" },
+        { date: "Jumat 20 Desember 2024", time: "20:00 WIB", team1: "EXONCROWD", team2: "Brooklyn" },
+        { date: "Sabtu 21 Desember 2024", time: "20:00 WIB", team1: "MATADOR 1945th", team2: "𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍" },
+        { date: "Minggu 22 Desember 2024", time: "20:00 WIB", team1: "PAGUYUBAN TIAN MESSI", team2: "Vguezcyz" },
+        { date: "Senin 23 Desember 2024", time: "20:00 WIB", team1: "SIRKEL MOHAMMED", team2: "SUKI LIAR ONTOPP" },
+        { date: "Selasa 24 Desember 2024", time: "20:00 WIB", team1: "TeamOgahMundur", team2: "Tempe Orek" },
+        { date: "Rabu 25 Desember 2024", time: "20:00 WIB", team1: "The San Diego California", team2: "Tiger Latin Kings" },
+        { date: "Kamis 26 Desember 2024", time: "20:00 WIB", team1: "VENESTAR", team2: "VILLAN" },
+        { date: "Jumat 27 Desember 2024", time: "20:00 WIB", team1: "Allstar White", team2: "AIM-AMPING SQUAD" },
+        { date: "Sabtu 28 Desember 2024", time: "20:00 WIB", team1: "Ambative", team2: "EVOS SA-MP" },
+        { date: "Minggu 29 Desember 2024", time: "20:00 WIB", team1: "ETERNAL DARKNES GENG", team2: "EXONCROWD" },
+        { date: "Senin 30 Desember 2024", time: "20:00 WIB", team1: "Brooklyn", team2: "𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍" },
+        { date: "Selasa 31 Desember 2024", time: "20:00 WIB", team1: "MATADOR 1945th", team2: "PAGUYUBAN TIAN MESSI" },
+        { date: "Rabu 1 Januari 2025", time: "20:00 WIB", team1: "Vguezcyz", team2: "SUKI LIAR ONTOPP" },
+        { date: "Kamis 2 Januari 2025", time: "20:00 WIB", team1: "SIRKEL MOHAMMED", team2: "TeamOgahMundur" },
+        { date: "Jumat 3 Januari 2025", time: "20:00 WIB", team1: "Tempe Orek", team2: "The San Diego California" },
+        { date: "Sabtu 4 Januari 2025", time: "20:00 WIB", team1: "Tiger Latin Kings", team2: "VILLAN" },
+        { date: "Minggu 5 Januari 2025", time: "20:00 WIB", team1: "Allstar White", team2: "AIM-AMPING SQUAD" },
+        { date: "Senin 6 Januari 2025", time: "20:00 WIB", team1: "EXONCROWD", team2: "AMBARAWA TREX" },
+   
+    ];
+
+    const teamLogos = {
+        "AIM-AMPING SQUAD": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRViPFqhy1ysBlZIZwdrwxJnkiJqti9ylQRAs6HPpLFvVNur-axjsj5Yy-3&s=10",
+        "AMBARAWA TREX": "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg",
+        "Ambative": "https://thumbs2.imgbox.com/e0/dc/xUD2oDwB_t.jpg",
+        "ETERNAL DARKNES GENG": "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg",
+        "EVOS SA-MP": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhpMse50lFnBF5F76RljdCz7hqUJSiIlRmiK-mcuNBsxAMjVdDAh3qB8&s=10",
+        "EXONCROWD": "https://thumbs2.imgbox.com/ab/ff/QKYd9Hce_t.jpg",
+        "Brooklyn": "https://thumbs2.imgbox.com/6c/bd/WZwsPI0D_t.jpg",
+        "MATADOR 1945th": "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg",
+        "𝑭𝖗𝖊𝖊 𝑫𝖔𝖚𝖌𝖘 𝐍𝖊𝖎𝖌𝖍𝖙𝖇𝖔𝖗𝖍": "https://thumbs2.imgbox.com/6f/8f/gH6T3DzU_t.jpg",
+        "PAGUYUBAN TIAN MESSI": "https://thumbs2.imgbox.com/16/2d/lktw6Vja_t.jpg",
+        "Vguezcyz": "https://thumbs2.imgbox.com/26/a3/4cjor2kk_t.jpg",
+        "SIRKEL MOHAMMED": "https://thumbs2.imgbox.com/f2/00/BfXu7kRV_t.png",
+        "SUKI LIAR ONTOPP": "https://thumbs2.imgbox.com/20/5f/0KAJ1DPg_t.jpg",
+        "TeamOgahMundur": "https://thumbs2.imgbox.com/ce/6b/WwbtO0pE_t.jpg",
+        "Tempe Orek": "https://thumbs2.imgbox.com/99/91/M4K7Hscl_t.jpg",
+        "The San Diego California": "https://thumbs2.imgbox.com/16/47/SO7ic0Ei_t.jpg",
+        "Tiger Latin Kings": "https://thumbs2.imgbox.com/37/8b/eqxyadx2_t.jpg",
+        "VENESTAR": "https://thumbs2.imgbox.com/31/4b/gwUfPSXC_t.jpg",
+        "VILLAN": "https://thumbs2.imgbox.com/2b/f9/oFQyNSnH_t.jpg",
+           "RRQ SA-MP": "https://thumbs2.imgbox.com/7c/3f/5F1zxOdX_t.jpg",
+        "Allstar White": "https://thumbs2.imgbox.com/50/fb/fDp9kLd3_t.jpg",
+        "EXONCROWD": "https://thumbs2.imgbox.com/90/44/cisq6Hjn_t.jpg",
+    };
+
+    function filterSchedule() {
+        const selectedTeam = document.getElementById("teamSelect").value;
+        const scheduleContainer = document.getElementById("scheduleContainer");
+        scheduleContainer.innerHTML = '';
+
+        const filteredMatches = matches.filter(match => 
+            selectedTeam === 'all' || 
+            match.team1 === selectedTeam || 
+            match.team2 === selectedTeam
+        );
+
+        filteredMatches.forEach(match => {
+            const matchDiv = document.createElement("div");
+            matchDiv.className = "match";
+            matchDiv.innerHTML = `
+                <h3>${match.date} - ${match.time}</h3>
+                <p>${match.team1} vs ${match.team2}</p>
+                <div class="team-logos">
+                    <img src="${teamLogos[match.team1]}" alt="${match.team1}" class="team-logo">
+                    <img src="${teamLogos[match.team2]}" alt="${match.team2}" class="team-logo">
+                </div>
+            `;
+            scheduleContainer.appendChild(matchDiv);
+        });
+    }
+
+    // Load all matches by default
+    window.onload = filterSchedule;
+</script>
+
+</body>
+</html>
+
+
+
+ 
+    
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkxaH5fYQP4Ijuvo9xeufq4gdVQTkpD4YSYj0PHvsLn-6hr-zhDa_6hSY&s=10');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  
+  
+  <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #ff0000; text-shadow: 0 0 20px #ffffff; }
+      66% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+    }
+
+    h1 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
