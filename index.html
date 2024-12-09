@@ -337,13 +337,13 @@ li {
 <script>
     const teams = [
         { name: "AIM-AMPING SQUAD", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGw9_0WogI-v0nzAIsv_C5US5IPVJHHzoYu_HkvUHZe4gWaxzIShTpko&s=10", points: 0, score: 0, matches: 0 },
-        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 7, score: 7, matches: 2 },
-        { name: "Ambative", logo: "https://thumbs2.imgbox.com/e0/dc/xUD2oDwB_t.jpg", points: 6, score: 6, matches: 2 },
-        { name: "ETERNAL DARKNES GENG", logo: "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg", points: 2, score: 2, matches: 1 },
+        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 5, score: 6, matches: 2 },
+        { name: "Ambative", logo: "https://thumbs2.imgbox.com/e0/dc/xUD2oDwB_t.jpg", points: 3, score: 3, matches: 1 },
+        { name: "ETERNAL DARKNES GENG", logo: "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "EVOS SA-MP", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhpMse50lFnBF5F76RljdCz7hqUJSiIlRmiK-mcuNBsxAMjVdDAh3qB8&s=10", points: 2, score: 1, matches: 1 },
         { name: "ExonCrowd", logo: "https://thumbs2.imgbox.com/ab/ff/QKYd9Hce_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Brooklyn", logo: "https://thumbs2.imgbox.com/6c/bd/WZwsPI0D_t.jpg", points: 0, score: 0, matches: 0 },
-        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 3, score: 2, matches: 1 },
+        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Free Dougs Neightborh", logo: "https://thumbs2.imgbox.com/6f/8f/gH6T3DzU_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "PAGUYUBAN TIAN MESSI", logo: "https://thumbs2.imgbox.com/16/2d/lktw6Vja_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "Vguezcyz - cranio", logo: "https://thumbs2.imgbox.com/05/89/jGVodkoE_t.jpg", points: 0, score: 0, matches: 0 },
@@ -357,6 +357,7 @@ li {
         { name: "VILLAN", logo: "https://thumbs2.imgbox.com/2b/f9/oFQyNSnH_t.jpg", points: 3, score: 3, matches: 1 },
         { name: "Allstar White", logo: "https://thumbs2.imgbox.com/50/fb/fDp9kLd3_t.jpg", points: 0, score: 0, matches: 0 },
         { name: "RRO SA-MP", logo: "https://thumbs2.imgbox.com/71/ff/lBtGNs38_t.jpg", points: 0, score: 0, matches: 0 },
+        { name: "Brotherhood", logo: "https://thumbs2.imgbox.com/b3/2f/RnRXlnO2_t.jpg", points: 0, score: 0, matches: 0 }, { name: "8 SALVATRUCHA", logo: "https://thumbs2.imgbox.com/92/d5/GMB8PNGz_t.jpg", points: 0, score: 0, matches: 0 }, { name: "Gelatik families", logo: "https://thumbs2.imgbox.com/05/69/18VQ0pRM_t.jpg", points: 0, score: 0, matches: 0 }, { name: "PINGKY blinders", logo: "https://thumbs2.imgbox.com/c8/e7/ng7pASdG_t.jpg", points: 0, score: 0, matches: 0 }, { name: "The gathering of all stars", logo: "https://thumbs2.imgbox.com/1f/0f/vpPmCs2f_t.jpg", points: 0, score: 0, matches: 0 }, { name: "Bounty Hunter Watts Bloods", logo: "https://thumbs2.imgbox.com/62/c2/0cSEgrDW_t.jpg", points: 0, score: 0, matches: 0 }, { name: "PARTYAN OKEPZ", logo: "https://thumbs2.imgbox.com/46/f0/1PY48xZC_t.jpg", points: 0, score: 0, matches: 0 }, { name: "Elpadron 1846 || TCW", logo: "https://thumbs2.imgbox.com/a9/af/sgJzdSWQ_t.jpg", points: 0, score: 0, matches: 0 } 
     ];
 
     function renderTeams() {
@@ -532,6 +533,15 @@ h1 {
         <option value="Allstar White">Allstar White</option>
         <option value="EXONCROWD">EXONCROWD</option>
          <option value="RRQ SA-MP">RRQ SA-MP</option>
+              <option value="Brotherhood">Brotherhood</option>
+                   <option value="8 SALVATRUCHA">8 SALVATRUCHA</option>
+                        <option value="Gelatik families">Gelatik families</option>
+                             <option value="PINGKY blinders">PINGKY blinders</option>
+                                  <option value="The gathering of all stars">The gathering of all stars</option>
+                                
+          <option value="Bounty Hunter Watts Bloods">Bounty Hunter Watts Bloods</option>
+                             <option value="PARTYAN OKEPZ">PARTYAN OKEPZ</option> 
+                       <option value="Elpadron 1846">Elpadron 1846</option>                                
     </select>
 </div>
 
@@ -571,7 +581,15 @@ h1 {
         { date: "Sabtu 4 Januari 2025", time: "20:00 WIB", team1: "Tiger Latin Kings", team2: "VILLAN" },
         { date: "Minggu 5 Januari 2025", time: "20:00 WIB", team1: "Allstar White", team2: "AIM-AMPING SQUAD" },
         { date: "Senin 6 Januari 2025", time: "20:00 WIB", team1: "EXONCROWD", team2: "AMBARAWA TREX" },
-   
+        { date: "Senin 7 Januari 2025", time: "20:00 WIB", team1: "Brotherhood", team2: "8 SALVATRUCHA" },
+        
+          { date: "Selasa 8 Januari 2025", time: "20:00 WIB", team1: "Gelatik families", team2: "PINGKY blinders" },
+          
+            { date: "Rabu 9 Januari 2025", time: "20:00 WIB", team1: "The gathering of all stars", team2: "Bounty Hunter Watts Bloods" },
+            
+              { date: "Kamis 10 Januari 2025", time: "20:00 WIB", team1: "PARTYAN OKEPZ", team2: "Elpadron 1846" },
+              
+              { date: "Jumat 11 Januari 2025", time: "20:00 WIB", team1: "Brotherhood", team2: "Gelatik families" }, { date: "Sabtu 12 Januari 2025", time: "20:00 WIB", team1: "8 SALVATRUCHA", team2: "The gathering of all stars" }, { date: "Minggu 13 Januari 2025", time: "20:00 WIB", team1: "PINGKY blinders", team2: "PARTYAN OKEPZ" }, { date: "Senin 14 Januari 2025", time: "20:00 WIB", team1: "Bounty Hunter Watts Bloods", team2: "Elpadron 1846" }, { date: "Selasa 15 Januari 2025", time: "20:00 WIB", team1: "Brotherhood", team2: "PINGKY blinders" }, { date: "Rabu 16 Januari 2025", time: "20:00 WIB", team1: "8 SALVATRUCHA", team2: "PARTYAN OKEPZ" }, { date: "Kamis 17 Januari 2025", time: "20:00 WIB", team1: "Gelatik families", team2: "Bounty Hunter Watts Bloods" }, { date: "Jumat 18 Januari 2025", time: "20:00 WIB", team1: "The gathering of all stars", team2: "Elpadron 1846" } 
     ];
 
     const teamLogos = {
@@ -597,6 +615,16 @@ h1 {
            "RRQ SA-MP": "https://thumbs2.imgbox.com/7c/3f/5F1zxOdX_t.jpg",
         "Allstar White": "https://thumbs2.imgbox.com/50/fb/fDp9kLd3_t.jpg",
         "EXONCROWD": "https://thumbs2.imgbox.com/90/44/cisq6Hjn_t.jpg",
+        "Brotherhood":        "https://thumbs2.imgbox.com/b3/2f/RnRXlnO2_t.jpg",
+        "8 SALVATRUCHA":       "https://thumbs2.imgbox.com/92/d5/GMB8PNGz_t.jpg",
+        "Gelatik families": "https://thumbs2.imgbox.com/05/69/18VQ0pRM_t.jpg",
+        "PINGKY blinders": "https://thumbs2.imgbox.com/c8/e7/ng7pASdG_t.jpg",
+"The gathering of all stars": "https://thumbs2.imgbox.com/1f/0f/vpPmCs2f_t.jpg",
+"Bounty Hunter Watts Bloods": "https://thumbs2.imgbox.com/62/c2/0cSEgrDW_t.jpg",
+"PARTYAN OKEPZ": "https://thumbs2.imgbox.com/46/f0/1PY48xZC_t.jpg",
+"Elpadron 1846": "https://thumbs2.imgbox.com/a9/af/sgJzdSWQ_t.jpg",
+
+              
     };
 
     function filterSchedule() {
@@ -657,3 +685,4 @@ h1 {
       animation: colorBlink 3s infinite;
     }
   </style>
+
