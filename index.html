@@ -296,12 +296,12 @@ li {
             font-family: Arial, sans-serif;
         }
         table {
-            width: 50%; /* Adjusted width for better visibility */
+            width: 90%; /* Adjusted width for better visibility */
             border-collapse: collapse;
             margin-top: 20px;
         }
         th, td {
-            border: 1px  ;
+            border: 1px solid #; /* Anda bisa menambahkan warna border sesuai kebutuhan */
             padding: 10px;
             text-align: left;
         }
@@ -310,9 +310,15 @@ li {
             background-color: #ff0000;
         }
         img {
-            width: 50px;
+            width: 50px; /* Ukuran logo tim */
             height: 50px;
             border-radius: 50%;
+        }
+        .tax-icon {
+            width: 20px; /* Ukuran ikon pajak */
+            height: 20px;
+            border-radius: 0; /* Tidak perlu border-radius untuk ikon pajak */
+            vertical-align: middle; /* Untuk penataan yang lebih baik */
         }
     </style>
 </head>
@@ -328,6 +334,7 @@ li {
             <th>P</th>
             <th>S</th>
             <th>M</th>
+            <th>PJ</th> <!-- Kolom pajak baru -->
         </tr>
     </thead>
     <tbody>
@@ -337,74 +344,44 @@ li {
 
 <script>
     const teams = [
-        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 12, score: 15, matches: 5 },
-     
-        { name: "ETERNAL DARKNES GENG", logo: "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg", points: 4, score: 4, matches: 2 },
-        { name: "EVOS SA-MP", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhpMse50lFnBF5F76RljdCz7hqUJSiIlRmiK-mcuNBsxAMjVdDAh3qB8&s=10", points: 12, score: 17, matches: 5 },
-        { name: "ExonCrowd", logo: "https://thumbs2.imgbox.com/ab/ff/QKYd9Hce_t.jpg", points: 4, score: 2, matches: 2 },
-        { name: "Brooklyn", logo: "https://thumbs2.imgbox.com/6c/bd/WZwsPI0D_t.jpg", points: 7, score: 5, matches: 2},
-        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 13, score: 17, matches: 5 },
-        { name: "Free Dougs Neightborh", logo: "https://thumbs2.imgbox.com/68/21/lpiD9h2D_t.jpg", points: 15, score: 24, matches: 5 },
-        { name: "Vguezcyz - cranio", logo: "https://thumbs2.imgbox.com/05/89/jGVodkoE_t.jpg", points: 4, score: 2, matches: 2 },
-        { name: "PULL MY DICK", logo: "https://thumbs2.imgbox.com/4b/f2/aMwSNoGR_t.jpg", points: 0, score: 0, matches: 0 },
-       
-        { name: "Team Ogah Mundur", logo: "https://thumbs2.imgbox.com/ce/6b/WwbtO0pE_t.jpg", points: 7, score: 5, matches: 3 },
-        { name: "Tempe Orek", logo: "https://thumbs2.imgbox.com/99/91/M4K7Hscl_t.jpg", points: 13, score: 15, matches: 5 },
-        { name: "The San Diego California", logo: "https://thumbs2.imgbox.com/16/47/SO7ic0Ei_t.jpg", points: 14, score: 17, matches: 5 },
-        { name: "Tiger Latin Kings", logo: "https://thumbs2.imgbox.com/37/8b/eqxyadx2_t.jpg", points: 9, score: 15, matches: 3 },
-       
-        { name: "PIER 69", logo: "https://thumbs2.imgbox.com/23/d1/B0FzTq0P_t.jpg", points: 13, score: 25, matches: 5 },
-        
-        { name: "Brotherhood", logo: "https://thumbs2.imgbox.com/b3/2f/RnRXlnO2_t.jpg", points: 12, score: 10, matches: 4 },
-        
-        { name: "Gelatik families", logo: "https://thumbs2.imgbox.com/05/69/18VQ0pRM_t.jpg", points: 13, score: 15, matches: 5 },
-        { name: "PINKY blinders", logo: "https://thumbs2.imgbox.com/c8/e7/ng7pASdG_t.jpg", points: 10, score: 2, matches: 5 },
-        { name: "The gathering of all stars", logo: "https://thumbs2.imgbox.com/8d/fe/Eekapla2_t.jpg", points: 13, score: 19, matches: 5 },
-        { name: "Bounty Hunter Watts Bloods", logo: "https://thumbs2.imgbox.com/62/c2/0cSEgrDW_t.jpg", points: 6, score: 4, matches: 3 },
-        { name: "PARTYAN OKEPZ", logo: "https://thumbs2.imgbox.com/46/f0/1PY48xZC_t.jpg", points: 10, score: 13, matches: 4 },
-        { name: "ELPADRON || TCW", logo: "https://thumbs2.imgbox.com/a9/af/sgJzdSWQ_t.jpg", points: 14, score: 23, matches: 5 }
-    ,
-            { name: "o'block ", logo: "https://thumbs2.imgbox.com/62/2b/dmvVmUwU_t.jpg", points: 15, score: 18, matches: 5 }
-            ,
-            
-             { name: "PANTOMIC ", logo: "https://thumbs2.imgbox.com/8c/a7/ZY7nSWTa_t.jpg", points: 10, score: 13, matches: 5 },
-             
-             
-             
-     
-       
-             
-
-{ name: "THE COUNTRY", logo: "https://thumbs2.imgbox.com/6c/f0/HHDzM5nS_t.jpg", points: 2, score: 3, matches: 1 },
-{ name: "VENDETTA WEAPON", logo: "https://thumbs2.imgbox.com/fb/bc/mHLUFSPH_t.jpeg", points: 6, score: 11, matches: 2 },
-
-{ name: "REAL MAGRIB", logo: "https://thumbs2.imgbox.com/08/2c/Oe87Qqrz_t.jpg", points: 11, score: 18, matches: 5 },
-
-{ name: "AMBALONA", logo: "https://thumbs2.imgbox.com/e9/ae/LxUNqMnW_t.png", points: 15, score: 27, matches: 5 },
-
-       { name: "ELPATRON", logo: "https://thumbs2.imgbox.com/2a/c4/exIWNNUk_t.jpg", points: 2, score: 4, matches: 1 }, 
-       
-       { name: "AIMSTAR", logo: "https://thumbs2.imgbox.com/6b/9f/UhM14WQm_t.jpg", points: 14, score: 24, matches: 5 }, 
-       
-         { name: "4K", logo: "https://thumbs2.imgbox.com/dc/d3/UjKyAbxC_t.jpg", points: 2, score: 0, matches: 1 }, 
-         
-           { name: "MORTALLY", logo: "https://thumbs2.imgbox.com/65/e6/XCq7myg9_t.jpg", points: 9, score: 6, matches: 4 }, 
-
-	    
-       { name: "AKAMSI", logo: "https://thumbs2.imgbox.com/31/4b/gwUfPSXC_t.jpg", points: 7, score: 8, matches: 3 }, 
-
-	    
-       { name: "AMBACHASTER UNITED", logo: "https://thumbs2.imgbox.com/a4/75/4wWMyg8i_t.jpg", points: 14, score: 21, matches: 5 }, 
-
-	    
-       { name: "NGAWI TEAM", logo: "https://thumbs2.imgbox.com/e4/30/Cpte1kaQ_t.jpg", points: 9, score: 14, matches: 3 },
-
-	 { name: "LOID TEAM", logo: "https://thumbs2.imgbox.com/c0/78/DCcoiw7e_t.jpg", points: 3, score: 9, matches: 1. },
-           
+        { name: "AMBARAWA TREX", logo: "https://thumbs2.imgbox.com/14/cb/NS3hdYn7_t.jpg", points: 12, score: 15, matches: 5, tax: "belum" },
+        { name: "ETERNAL DARKNES GENG", logo: "https://thumbs2.imgbox.com/d2/bd/xQXgFx6E_t.jpg", points: 4, score: 4, matches: 2, tax: "belum" },
+        { name: "EVOS SA-MP", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhpMse50lFnBF5F76RljdCz7hqUJSiIlRmiK-mcuNBsxAMjVdDAh3qB8&s=10", points: 12, score: 17, matches: 5, tax: "belum" },
+        { name: "ExonCrowd", logo: "https://thumbs2.imgbox.com/ab/ff/QKYd9Hce_t.jpg", points: 4, score: 2, matches: 2, tax: "belum" },
+        { name: "Brooklyn", logo: "https://thumbs2.imgbox.com/6c/bd/WZwsPI0D_t.jpg", points: 7, score: 5, matches: 2, tax: "belum" },
+        { name: "MATADOR 1945th", logo: "https://thumbs2.imgbox.com/b6/ad/K88pJ592_t.jpg", points: 13, score: 17, matches: 5, tax: "y" },
+        { name: "Free Dougs Neightborh", logo: "https://thumbs2.imgbox.com/68/21/lpiD9h2D_t.jpg", points: 15, score: 24, matches: 5, tax: "belum" },
+        { name: "Vguezcyz - cranio", logo: "https://thumbs2.imgbox.com/05/89/jGVodkoE_t.jpg", points: 4, score: 2, matches: 2, tax: "belum" },
+        { name: "PULL MY DICK", logo: "https://thumbs2.imgbox.com/4b/f2/aMwSNoGR_t.jpg", points: 0, score: 0, matches: 0, tax: "belum" },
+        { name: "Team Ogah Mundur", logo: "https://thumbs2.imgbox.com/ce/6b/WwbtO0pE_t.jpg", points: 7, score: 5, matches: 3, tax: "belum" },
+        { name: "Tempe Orek", logo: "https://thumbs2.imgbox.com/99/91/M4K7Hscl_t.jpg", points: 13, score: 15, matches: 5, tax: "belum" },
+        { name: "The San Diego California", logo: "https://thumbs2.imgbox.com/16/47/SO7ic0Ei_t.jpg", points: 14, score: 17, matches: 5, tax: "belum" },
+        { name: "Tiger Latin Kings", logo: "https://thumbs2.imgbox.com/37/8b/eqxyadx2_t.jpg", points: 9, score: 15, matches: 3, tax: "belum" },
+        { name: "PIER 69", logo: "https://thumbs2.imgbox.com/23/d1/B0FzTq0P_t.jpg", points: 13, score: 25, matches: 5, tax: "y" },
+        { name: "Brotherhood", logo: "https://thumbs2.imgbox.com/b3/2f/RnRXlnO2_t.jpg", points: 12, score: 10, matches: 4, tax: "belum" },
+        { name: "Gelatik families", logo: "https://thumbs2.imgbox.com/05/69/18VQ0pRM_t.jpg", points: 13, score: 15, matches: 5, tax: "belum" },
+        { name: "PINKY blinders", logo: "https://thumbs2.imgbox.com/c8/e7/ng7pASdG_t.jpg", points: 10, score: 2, matches: 5, tax: "belum" },
+        { name: "The gathering of all stars", logo: "https://thumbs2.imgbox.com/8d/fe/Eekapla2_t.jpg", points: 13, score: 19, matches: 5, tax: "belum" },
+        { name: "Bounty Hunter Watts Bloods", logo: "https://thumbs2.imgbox.com/62/c2/0cSEgrDW_t.jpg", points: 6, score: 4, matches: 3, tax: "belum" },
+        { name: "PARTYAN OKEPZ", logo: "https://thumbs2.imgbox.com/46/f0/1PY48xZC_t.jpg", points: 10, score: 13, matches: 4, tax: "belum" },
+        { name: "ELPADRON || TCW", logo: "https://thumbs2.imgbox.com/a9/af/sgJzdSWQ_t.jpg", points: 14, score: 23, matches: 5, tax: "belum" },
+        { name: "o'block", logo: "https://thumbs2.imgbox.com/62/2b/dmvVmUwU_t.jpg", points: 15, score: 18, matches: 5, tax: "belum" },
+        { name: "PANTOMIC", logo: "https://thumbs2.imgbox.com/8c/a7/ZY7nSWTa_t.jpg", points: 10, score: 13, matches: 5, tax: "belum" },
+        { name: "THE COUNTRY", logo: "https://thumbs2.imgbox.com/6c/f0/HHDzM5nS_t.jpg", points: 2, score: 3, matches: 1, tax: "belum" },
+        { name: "VENDETTA WEAPON", logo: "https://thumbs2.imgbox.com/fb/bc/mHLUFSPH_t.jpeg", points: 6, score: 11, matches: 2, tax: "belum" },
+        { name: "REAL MAGRIB", logo: "https://thumbs2.imgbox.com/08/2c/Oe87Qqrz_t.jpg", points: 11, score: 18, matches: 5, tax: "belum" },
+        { name: "AMBALONA", logo: "https://thumbs2.imgbox.com/e9/ae/LxUNqMnW_t.png", points: 15, score: 27, matches: 5, tax: "y" },
+        { name: "ELPATRON", logo: "https://thumbs2.imgbox.com/2a/c4/exIWNNUk_t.jpg", points: 2, score: 4, matches: 1, tax: "belum" },
+        { name: "AIMSTAR", logo: "https://thumbs2.imgbox.com/6b/9f/UhM14WQm_t.jpg", points: 14, score: 24, matches: 5, tax: "belum" },
+        { name: "4K", logo: "https://thumbs2.imgbox.com/dc/d3/UjKyAbxC_t.jpg", points: 2, score: 0, matches: 1, tax: "belum" },
+        { name: "MORTALLY", logo: "https://thumbs2.imgbox.com/65/e6/XCq7myg9_t.jpg", points: 9, score: 6, matches: 4, tax: "belum" },
+        { name: "AKAMSI", logo: "https://thumbs2.imgbox.com/31/4b/gwUfPSXC_t.jpg", points: 7, score: 8, matches: 3, tax: "belum" },
+        { name: "AMBACHASTER UNITED", logo: "https://thumbs2.imgbox.com/a4/75/4wWMyg8i_t.jpg", points: 14, score: 21, matches: 5, tax: "y" },
+        { name: "NGAWI TEAM", logo: "https://thumbs2.imgbox.com/e4/30/Cpte1kaQ_t.jpg", points: 9, score: 14, matches: 3, tax: "belum" },
+        { name: "LOID TEAM", logo: "https://thumbs2.imgbox.com/c0/78/DCcoiw7e_t.jpg", points: 3, score: 9, matches: 1, tax: "y" }
     ];
 
     function renderTeams() {
-        // Sort teams based on points and then score
         teams.sort((a, b) => {
             if (b.points !== a.points) {
                 return b.points - a.points; // Sort by points
@@ -417,6 +394,14 @@ li {
         tableBody.innerHTML = ""; // Clear existing rows
 
         teams.forEach((team, index) => {
+            const taxIcon = team.tax === "y"
+                ? '<img class="tax-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDNDMTUuNDE4MyAzIDE5IDYuNTgxNzIgMTkgMTFDMTkgMTUuNDE4MyAxNS40MTgzIDE5IDExIDE5QzYuNTgxNzIgMTkgMyAxNS40MTgzIDMgMTFDMyA2LjU4MTcyIDYuNTgxNzIgMyAxMSAzWiIgZmlsbD0iIzM0QTg1MyIvPgo8cGF0aCBkPSJNOS4yIDEyLjI4TDcuMTIgMTAuMkw2IDExLjMyTDkuMiAxNC41MkwxNS42IDguMTJMMTQuNDggN0w5LjIgMTIuMjhaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Sudah Bayar Pajak">' 
+                : '<img class="tax-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDNDMTUuNDE4MyAzIDE5IDYuNTgxNzIgMTkgMTFDMTkgMTUuNDE4MyAxNS40MTgzIDE5IDExIDE5QzYuNTgxNzIgMTkgMyAxNS40MTgzIDMgMTFDMyA2LjU4MTcyIDYuNTgxNzIgMyAxMSAzWiIgZmlsbD0iI0VBNDMzNSIvPgo8cGF0aCBkPSJNOS4yIDEyLjI4TDcuMTIgMTAuMkw2IDExLjMyTDkuMiAxNC41MkwxNS42IDguMTJMMTQuNDggN0w5LjIgMTIuMjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExIDE5QzE1LjQxODMgMTkgMTkgMTUuNDE4MyAxOSAxMUMxOSA2LjU4MTcyIDE1LjQxODMgMyAxMSAzQzYuNTgxNzIgMyAzIDYuNTgxNzIgMyAxMUMzIDE1LjQxODMgNi41ODE3MiAxOSAxMSAxOVoiIGZpbGw9IiNFQTQzMzUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4yNjI3IDE0LjM5NDFMMTEgMTIuMTMxNEw4LjczNzI2IDE0LjM5NDFMNy42MDU4OSAxMy4yNjI3TDkuODY4NjMgMTFMNy42MDU4OSA4LjczNzI1TDguNzM3MjYgNy42MDU4OEwxMSA5Ljg2ODYyTDEzLjI2MjcgNy42MDU4OEwxNC4zOTQxIDguNzM3MjVMMTIuMTMxNCAxMUwxNC4zOTQxIDEzLjI2MjdMMTMuMjYyNyAxNC4zOTQxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="Belum Bayar Pajak">';
+
+            const matchesDisplay = team.matches === 5 
+                ? `<span style="color: red;">${team.matches}/5</span>` 
+                : `${team.matches}/5`;
+
             const row = tableBody.insertRow();
             row.innerHTML = `
                 <td>${index + 1}</td>
@@ -424,7 +409,8 @@ li {
                 <td>${team.name}</td>
                 <td>${team.points}</td>
                 <td>${team.score}</td>
-                <td>${team.matches}</td>
+                <td>${matchesDisplay}</td> <!-- Menampilkan jumlah match dengan format yang diminta -->
+                <td>${taxIcon}</td> <!-- Menampilkan ikon pajak -->
             `;
         });
     }
@@ -433,12 +419,12 @@ li {
     renderTeams();
 </script>
 
+
+
 </center>
 </body>
 </html>
 
-
- 				</center>
  				
  				
  				
@@ -833,76 +819,4 @@ h1 {
       animation: colorBlink 3s infinite;
     }
   </style>
-
-<script>
-    // Your teams array here...
-
-    function renderTeams() {
-        // Sort teams based on points and then score
-        teams.sort((a, b) => {
-            if (b.points !== a.points) {
-                return b.points - a.points; // Sort by points
-            } else {
-                return b.score - a.score; // Sort by score if points are equal
-            }
-        });
-
-        const tableBody = document.getElementById("teamTable").getElementsByTagName("tbody")[0];
-        tableBody.innerHTML = ""; // Clear existing rows
-
-        teams.forEach((team, index) => {
-            const matchesDisplay = team.matches >= 5 ? `<span style="color: red;">${team.matches}/5</span>` : `${team.matches}/5`;
-            const row = tableBody.insertRow();
-            row.innerHTML = `
-                <td>${index + 1}</td>
-                <td><img src="${team.logo}" alt="${team.name}"></td>
-                <td>${team.name}</td>
-                <td>${team.points}</td>
-                <td>${team.score}</td>
-                <td>${matchesDisplay}</td>
-            `;
-        });
-    }
-
-    // Initial rendering
-    renderTeams();
-    
-</script>
-
-
-<script>
-				function renderTeams() {
-    // Sort teams based on points and then score
-    teams.sort((a, b) => {
-        if (b.points !== a.points) {
-            return b.points - a.points; // Sort by points
-        } else {
-            return b.score - a.score; // Sort by score if points are equal
-        }
-    });
-
-    const tableBody = document.getElementById("teamTable").getElementsByTagName("tbody")[0];
-    tableBody.innerHTML = ""; // Clear existing rows
-
-    teams.forEach((team, index) => {
-        // Check if the team has completed 5 matches
-        const matchesDisplay = team.matches === 5 
-            ? `<span style="color: green;">${team.matches}/5</span>` 
-            : `${team.matches}/5`;
-
-        const row = tableBody.insertRow();
-        row.innerHTML = `
-            <td>${index + 1}</td>
-            <td><img src="${team.logo}" alt="${team.name}"></td>
-            <td>${team.name}</td>
-            <td>${team.points}</td>
-            <td>${team.score}</td>
-            <td>${matchesDisplay}</td>
-        `;
-    });
-}
-
-</script>
-
-
 
